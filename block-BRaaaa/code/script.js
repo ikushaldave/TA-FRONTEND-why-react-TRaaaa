@@ -7,7 +7,8 @@ const watchList = JSON.parse(localStorage.getItem("watchList")) ?? [];
 
 function renderUI (watchList) {
   watchListElement.innerHTML = "";
-  const documentFrag = document.createDocumentFragment()
+  const documentFrag = document.createDocumentFragment();
+
   watchList.forEach((movie, index) => {
     const li = document.createElement("li");
     const btn = document.createElement("button");
@@ -19,12 +20,14 @@ function renderUI (watchList) {
     li.append(btn);
     documentFrag.append(li);
   });
+  
+  localStorage.setItem("watchList", JSON.stringify(watchList));
   watchListElement.append(documentFrag);
 }
 
 function toggle (target) {
   const id = target.closest("li").dataset.id;
-  watchList[id].isWatched = (watchList[id].isWatched ? false : true);
+  watchList[id].isWatched = !watchList[id].isWatched;
   renderUI(watchList)
 }
 
@@ -37,7 +40,6 @@ addMovieToWatchListElement.addEventListener("keyup", (e) => {
       "isWatched": false
     })
     e.target.value = ""
-    localStorage.setItem("watchList", JSON.stringify(watchList));
     renderUI(watchList)
   }
 })
