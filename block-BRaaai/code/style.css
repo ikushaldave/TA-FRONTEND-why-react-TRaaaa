@@ -83,10 +83,14 @@ img {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: hsl(0,0%,20%);
+}
+
 h3 {
   font-weight: 700;
   font-size: 1.5rem;
-  color: hsl(0,0%,20%);
   margin: .5rem 0;
 }
 
@@ -104,6 +108,7 @@ p {
 
 .feature-image {
   position: relative;
+  text-transform: uppercase;
 }
 
 .published-date {
@@ -117,11 +122,20 @@ p {
   right: 1rem;
 }
 
-.published-date span {
-  text-transform: uppercase;
+.published-date span,
+.category {
   font-size: 1.25rem;
   font-weight: 700;
   color: #fff;
+}
+
+.category {
+  display: inline-block;
+  background-color: hsl(6,77%,56%);
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  padding: .25rem .5rem;
 }
 
 .card-content {
