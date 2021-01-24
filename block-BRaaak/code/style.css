@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* globals */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background-color: #FAFAF9;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+/* typography */
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: hsl(8,55%,58%);
+  margin: 1rem 0;
+}
+
+p {
+  color: rgb(116, 114, 114);
+}
+
+/* buttons */
+
+a {
+  text-decoration: none;
+  color: hsl(0,0%,19%);
+}
+
+/* articles */
+
+.articles {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.article {
+  width: 380px;
+  padding: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25),
+  -2px -2px 20px rgba(0, 0, 0, 0.25);
+}
+
+.feature-image {
+  position: relative;
+}
+
+.published-date,
+.category {
+  background-color: hsl(5,79%,57%);
+  position: absolute;
+  color: #F2F2F2;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.published-date {
+  width: 4rem;
+  height: 4rem;
+  top: .5rem;
+  right: .5rem;
+  border-radius: 50%;
+}
+
+.category {
+  left: 0;
+  bottom: 0;
+  padding: .25rem .35rem;
+}
+
+.article-content {
+  background-color: #FAFAF9;
+}
+
+.article-extra-info {
+  margin: 1.5rem 0 .5rem;
+  color: hsl(0,0%,60%);
+  font-size: 1.1rem;
+}
+
+.posted-time-ago {
+  margin-right: 1rem;
+}
