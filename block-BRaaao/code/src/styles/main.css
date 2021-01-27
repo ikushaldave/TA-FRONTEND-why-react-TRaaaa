@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.15.0/css/all.css');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
@@ -66,6 +67,7 @@ table {
 
 body {
   font-family: 'Rubik', sans-serif;
+  background-color: antiquewhite;
 }
 
 .container {
@@ -76,7 +78,11 @@ body {
 
 .flex {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+}
+
+.flex-col {
+  flex-flow: column wrap;
 }
 
 .justify-space-between {
@@ -89,7 +95,16 @@ body {
 
 img {
   width: 100%;
+  height: 100%;
   display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
+.ptb-2 {
+  padding: 1rem 2rem;
 }
 
 /* Typography */
@@ -100,6 +115,7 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
+  font-weight: 700;
 }
 
 h3 {
@@ -109,7 +125,13 @@ h3 {
 /* Links */
 
 a {
+  display: inline-block;
   text-decoration: none;
+  color: deepskyblue;
+}
+
+a:hover {
+  color: greenyellow;
 }
 
 /* header */
@@ -121,4 +143,50 @@ a {
 
 .logo h3 {
   display: inline-block;
+  margin-left: 1rem;
+}
+
+.nav a {
+  margin: 0 1rem;
+}
+
+/* Main */
+
+.article {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  padding: .5rem;
+  margin: 1.5rem auto;
+  height: 600px;
+}
+
+.article-feature-image {
+  height: 200px;
+}
+
+.article-title a {
+  color: cadetblue;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 1.5rem auto;
+}
+
+.article-paragraph {
+  color: rgb(104, 100, 100);
+  line-height: 1.6;
+}
+
+.article-extra-info {
+  margin: 2rem .5rem;
+}
+
+/* footer */
+
+.footer {
+  background-color: #fff;
+}
+
+.footer .social-links a {
+  margin: 0 1rem;
 }
