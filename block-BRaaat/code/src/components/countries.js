@@ -1,4 +1,4 @@
-[
+const countries = [
   {
     "code": "AC",
     "unicode": "U+1F1E6 U+1F1E8",
@@ -1548,3 +1548,5 @@
     "emoji": "🇿🇼"
   }
 ]
+
+export default countries;
