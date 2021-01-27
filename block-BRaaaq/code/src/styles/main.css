@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.15.0/css/all.css');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Globals */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: antiquewhite;
+}
+
+.container {
+  max-width: 1250px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-col {
+  flex-flow: column wrap;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
+.ptb-2 {
+  padding: 1rem 2rem;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/* Links */
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: deepskyblue;
+}
+
+a:hover {
+  color: greenyellow;
+}
+
+/* header */
+
+.logo img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.logo h3 {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.nav a {
+  margin: 0 1rem;
+}
+
+/* Main */
+
+.article {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  padding: .5rem;
+  margin: 1.5rem auto;
+  height: 600px;
+}
+
+.article-feature-image {
+  height: 200px;
+}
+
+.article-title a {
+  color: cadetblue;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 1.5rem auto;
+}
+
+.article-paragraph {
+  color: rgb(104, 100, 100);
+  line-height: 1.6;
+}
+
+.article-extra-info {
+  margin: 2rem .5rem;
+}
+
+/* footer */
+
+.footer {
+  background-color: #fff;
+}
+
+.footer .social-links a {
+  margin: 0 1rem;
+}
